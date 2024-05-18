@@ -1,0 +1,19 @@
+
+html{
+    background-image: url(../images/background.png);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+nav{
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    transition: 0.3s;
+    padding: 15px;
+}
+h2{
+    display: inline;
+}
