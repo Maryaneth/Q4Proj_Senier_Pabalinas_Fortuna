@@ -5,15 +5,37 @@ html{
     background-position: center;
     background-size: cover;
 }
-nav{
-    background-color: white;
-    position: fixed;
-    top: 0px;
-    width: 100%;
+nav ul {
+    list-style: none;
     display: flex;
-    transition: 0.3s;
-    padding: 15px;
+    align-items: center;
 }
-h2{
-    display: inline;
+
+nav ul li {
+    margin: 0 10px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown li a {
+    padding: 10px;
+    display: block;
 }
