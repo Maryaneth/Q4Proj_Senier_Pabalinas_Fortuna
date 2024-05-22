@@ -1,0 +1,56 @@
+header {
+    background-color: grey;
+    padding: 10px 15px 20px 20px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+    position: relative; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: gray;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown li a {
+    padding: 10px;
+    display: block;
+}
+
+.dropdown li {
+    white-space: nowrap;
+}
+
+.dropdown li a {
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown li a:hover {
+    background-color: #f1f1f1;
+}
