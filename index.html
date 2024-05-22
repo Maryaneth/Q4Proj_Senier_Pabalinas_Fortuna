@@ -23,16 +23,27 @@
                 </li>
             </ul>
         </nav>
-        <div>
-            <input type="text">
-            <button>Button</button>
-        </div>
     </header>
-    <main>
-        <section>
-            <h1>Welcome!</h1>
-            <button>Book a reservation!</button>
-        </section>
-    </main>
+<h1>Welcome!</h1>
+        <section class="booking-form">
+            <h1>Book Your Stay</h1>
+            <form id="bookingForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin">
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout">
+            <label for="room">Room Type:</label>
+            <select id="room" name="room" required>
+            <option value="single">Single Room</option>
+            <option value="double">Double Room</option>
+            <option value="suite">Suite</option>
+        </select>
+       <button type="submit">Submit</button>
+    </form>
 </body>
+<script src="script.js"></script>
 </html>
