@@ -1,5 +1,5 @@
 header {
-    background-color: grey;
+    background-color: white;
     padding: 10px 15px 20px 20px;
     position: sticky;
     top: 0;
@@ -14,6 +14,7 @@ nav ul {
 nav ul li {
     margin: 0 10px;
     position: relative; 
+    font-size: 50px;
 }
 
 nav ul li a {
@@ -94,4 +95,7 @@ nav ul li:hover .dropdown {
 .dropdown li a {
     padding: 10px;
     display: block;
+}
+h1{
+    font-size: 100px;
 }
