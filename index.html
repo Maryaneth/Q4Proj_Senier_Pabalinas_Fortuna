@@ -3,13 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beach Resort</title>
+    <title>3palms Resort and Bistro</title>
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="icon" type="image" href="./images/favicon.jpg">
 </head>
-
 <body>
-
     <header>
         <nav>
             <ul>
@@ -17,37 +14,40 @@
                 <li><a>Rooms</a>
                     <ul class="dropdown">
                         <li><a>Single Room</a></li>
+                        <li><a>Double Room</a></li>
                         <li><a>Suite</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
     </header>
-<center>
-<h1>Welcome!</h1>
-        <section class="booking-form">
+<section class="welcome">
+    <h1>Welcome!</h1>
+        <h2>Book a reservation!</h2>
+    </div>
+</section>
+<section class="booking">
             <h1>Book Your Stay</h1>
             <form id="bookingForm">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name">
-            <br>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email">
-            <br>
             <label for="checkin">Check-in Date:</label>
             <input type="date" id="checkin" name="checkin">
-            <br>
             <label for="checkout">Check-out Date:</label>
             <input type="date" id="checkout" name="checkout">
-            <br>
             <label for="room">Room Type:</label>
-            <select id="room" name="room" required>
-            <a><option value="single">Room</option></a>
-            <a><option value="suite">Suite</option></a>
+            <select id="room" name="room">
+            <option value="Room1">Room Type 1</option>
+            <option value="Room 2">Room Type 2</option>
+            <option value="Room3">Room Type 3</option>
+            <option value="Room4">Room Type 4</option>
+            <option value="Room5">Room Type 5</option>
+            <option value="Room6">Room Type 6</option>
         </select>
-       <button type="submit">Submit</button>
-    </form>
-</center>
+        <button type="submit">Submit</button>
+</section>
 </body>
 <script src="./javascript/index.js"></script>
 </html>
