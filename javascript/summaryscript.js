@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
         bookingForm.addEventListener('submit', (e) => {
             e.preventDefault();
             
-            if (confirm("Processing your reservation, please click OK to proceed.")) {
+            if (confirm("Processing your reservation, please click Confirm to proceed.")) {
                 const formData = new FormData(bookingForm);
                 const bookingData = {};
                 formData.forEach((value, key) => {
@@ -34,5 +34,10 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             summaryContent.innerHTML = '<p>No booking data found.</p>';
         }
+
+        const bookAnotherButton = document.getElementById('bookAnother');
+        bookAnotherButton.addEventListener('click', () => {
+            window.location.href = './index.html';
+        });
     }
 });

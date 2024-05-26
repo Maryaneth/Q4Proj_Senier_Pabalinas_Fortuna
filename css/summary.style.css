@@ -1,8 +1,14 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(to right, #66ccff, #99cc33);
+}
+
 header {
-    background-color: grey;
+    background: linear-gradient(to left, #66ccff, #99cc33);
     padding: 10px 15px 20px 20px;
     position: sticky;
     top: 0;
+    border: solid 10px black;
 }
 
 nav ul {
@@ -24,6 +30,7 @@ nav ul li a {
 
 nav ul li:hover .dropdown {
     display: block;
+    background: linear-gradient(to left, #66ccff, #99cc33); 
 }
 
 .dropdown {
@@ -52,5 +59,28 @@ nav ul li:hover .dropdown {
 }
 
 .dropdown li a:hover {
-    background-color: #f1f1f1;
+    background-color: whitesmoke;
 }
+
+.content {
+    text-align: center;
+    background: linear-gradient(to right, #66ccff, #99cc33);
+    padding: 50px 20px;
+}
+
+.content button{
+    background-color: navy;
+    color: navajowhite;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 40%;
+    font-size: 40px;
+}
+
+.message {
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
